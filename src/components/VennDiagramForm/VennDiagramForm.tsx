@@ -2,7 +2,6 @@ import { CircularProgress } from "@material-ui/core";
 import { Save } from "@mui/icons-material";
 import { Box, Button, TextField } from "@mui/material";
 import { useMachine } from "@xstate/react";
-import GradientBackground from "../GradientBackground/GradientBackground";
 import { FormField } from "./formFields";
 import { formMachine } from "./formMachine";
 import styles from "./VennDiagramForm.module.scss";

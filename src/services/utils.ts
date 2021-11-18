@@ -32,10 +32,10 @@ export const getDocumentDimensions = (): Dimension2d => {
 
 export const formIsCompleted = (ctx: FormContext, _event: any) => {
   return Object.entries(ctx.inputValues).every((input) => {
-    const [key, value] = input;
+    const [, value] = input;
     if (!value) {
       return false;
     }
     return true;
   });
-}
+};

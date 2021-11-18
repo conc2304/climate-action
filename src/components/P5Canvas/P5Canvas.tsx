@@ -25,7 +25,7 @@ export function P5Canvas(props: P5CanvasProps) {
       scrollWidth: 0,
     };
 
-    console.log(scrollWidth, scrollHeight)
+    setWidth(Math.max(width, scrollWidth || 0));
     setWidth(Math.max(width, scrollWidth || 0));
     setHeight(Math.max(height, scrollHeight || 0));
   }, [width, height]);
